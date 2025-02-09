@@ -75,6 +75,8 @@ const Home = ({ selectedCategory }) => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              height: "100vh",
+              width: "100%"
             }}
           >
             No Products Available
@@ -162,6 +164,7 @@ const Home = ({ selectedCategory }) => {
                       onClick={(e) => {
                         e.preventDefault();
                         addToCart(product);
+                        alert("Product added to cart");
                       }}
                       disabled={!productAvailable}
                     >
